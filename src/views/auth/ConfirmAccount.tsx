@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, Navigate } from "react-router-dom";
 import { PinInput, PinInputField } from "@chakra-ui/pin-input";
 import { useState } from "react";
 import { ConfirmToken } from "../../types";
@@ -25,6 +25,7 @@ export function ConfirmAccount() {
 
   const handleComplete = (token: ConfirmToken["token"]) => {
     mutate({ token });
+    <Navigate to="/auth/login" />
   };
 
   return (

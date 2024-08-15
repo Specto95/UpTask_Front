@@ -7,7 +7,7 @@ import { useQuery } from "@tanstack/react-query";
 import { getProjects } from "../api/ProjectAPI";
 import { useAuth } from "../hooks/useAuth";
 import { isManager } from "../utils/policies";
-import DeleteProjectModal from "../components/projects/DeleteProjectModal";
+import { DeleteProjectModal } from "../components/projects/DeleteProjectModal";
 
 export function DashboardView() {
   const navigate = useNavigate();

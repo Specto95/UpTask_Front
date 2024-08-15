@@ -9,7 +9,7 @@ import { checkPassword } from "../../api/AuthAPI";
 import { toast } from "react-toastify";
 import { deleteProject } from "../../api/ProjectAPI";
 
-export default function DeleteProjectModal() {
+export function DeleteProjectModal() {
   const initialValues = {
     password: "",
   };
